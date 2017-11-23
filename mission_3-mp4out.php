@@ -2,10 +2,10 @@
 if (preg_match('/^[0-9]+$/', $_GET['key'])) {
 $id = $_GET['key'];
 } else {
-throw new Exception('�G���[');
+throw new Exception('ƒGƒ‰[');
 }
 
-$pdo = new PDO('mysql:host=localhost;dbname=co_932_it_99sv_coco_com','co-932.it.99sv-c','8By6cYds');
+$pdo = new PDO('mysql:host=ホスト名;dbname=データベース名','ユーザー名','パスワード');
 $stmt = $pdo->prepare('SELECT ext, contents FROM images WHERE id=:id');
 $stmt->bindParam(':id', $id);
 $stmt->execute();
