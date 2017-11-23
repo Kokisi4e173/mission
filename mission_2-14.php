@@ -1,0 +1,13 @@
+<?php
+
+
+// DELETE•¶‚ð•Ï”‚ÉŠi”[
+$sql = "DELETE FROM menu WHERE id = :id";
+
+// íœ‚·‚éƒŒƒR[ƒh‚ÌID‚ð”z—ñ‚ÉŠi”[‚·‚é
+$params = array(':id'=>5);
+
+// íœŠ®—¹‚ÌƒƒbƒZ[ƒW
+echo 'íœŠ®—¹‚µ‚Ü‚µ‚½';
+
+?>
