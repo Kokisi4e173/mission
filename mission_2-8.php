@@ -1,14 +1,14 @@
 <?php
-// •Ï”‚Ì‰Šú‰»
+// å¤‰æ•°ã®åˆæœŸåŒ–
 $res = null;
 $pdo_conn = null;
 $sql = null;
 
 try {
-	// ƒf[ƒ^ƒx[ƒX‚ÆÚ‘±
-	$pdo_conn = new PDO('mysql:host=localhost;dbname=co_932_it_99sv_coco_com','co-932.it.99sv-c','8By6cYds');	
+	// ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¨æŽ¥ç¶š
+	$pdo_conn = new PDO('ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹åâ€™â€™ãƒ¦ãƒ¼ã‚¶ãƒ¼åâ€™â€™ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰â€™);	
 
-	// ƒe[ƒuƒ‹ì¬‚Ì‚½‚ß‚ÌSQL
+	// ãƒ†ãƒ¼ãƒ–ãƒ«ä½œæˆã®ãŸã‚ã®SQL
 	$sql = "CREATE TABLE menu (
 	id int PRIMARY KEY,
 	name varchar(50),
@@ -16,7 +16,7 @@ try {
 	modify_datetime date,
 	create_datetime date
 )";
-	// SQLƒNƒGƒŠŽÀs
+	// SQLã‚¯ã‚¨ãƒªå®Ÿè¡Œ
 	$res = $pdo_conn->query( $sql);
 	var_dump($res);
 
@@ -25,6 +25,6 @@ try {
 	var_dump($e->getMessage());
 }
 
-// ƒf[ƒ^ƒx[ƒX‚ÌÚ‘±‚ðØ’f
+// ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã®æŽ¥ç¶šã‚’åˆ‡æ–­
 $pdo_conn = null;
 ?>
